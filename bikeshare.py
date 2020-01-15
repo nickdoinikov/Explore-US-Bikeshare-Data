@@ -6,6 +6,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+month_data = ['january', 'february', 'march', 'april', 'may','june', 'all']
+weekday_data = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'all']
+
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -16,8 +21,14 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+    print('Would you like to see data for Chicago, New York City, or Washington?')
+
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
+    city = input('Enter the name of the city: ').lower()
+    while city not in CITY_DATA.keys():
+        print('Oops! Looks like you have entered a wrong city. Please try again! \n Choose between Chicago, New York City, or Washington')
+        city = input('Enter the name of the city: ').lower()
 
     # get user input for month (all, january, february, ... , june)
 

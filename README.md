@@ -5,7 +5,10 @@ The project had been submitted to the Udacity team on the **15 December 2019** a
 
 
 ## Software required / used
-
+* Atom
+* Anaconda
+* Git Bash
+* Microsoft Excel
 
 ## Credits
-Special thanks to the Udacity team of developers and mentors to guide students throughout SQL basics.
+Special thanks to the Udacity team of developers and mentors to guide students throughout Python basics.

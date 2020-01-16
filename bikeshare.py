@@ -32,6 +32,11 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
 
+    month = input('Enter the name of the month (type \'all\' for no filter): ').lower()
+    while month not in month_data:
+        print('Oops! Looks like you have entered a wrong month. Please try again!')
+        month = input('Enter the name of the month (type \'all\' for no filter): ').lower()
+
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 

@@ -40,6 +40,10 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
+    day = input('Enter the name of the day of the week (type \'all\' for no filter): ').lower()
+    while day not in weekday_data:
+        print('Oops! Looks like you have entered a wrong weekday. Please try again!')
+        day = input('Enter the name of the day of the week (type \'all\' for no filter): ').lower()
 
     print('-'*40)
     return city, month, day
